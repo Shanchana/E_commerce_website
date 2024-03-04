@@ -1,0 +1,174 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <nav>
+        <div class="navtop">
+            <div class="navitem">
+                       <img src="{% static 'img/logo.png' %}" alt="Nature Home" width="110" height="110">
+
+            </div>
+            <div class="navitem">
+                <div class="search">
+                    <input type="text" placeholder="Search..." class="searchinput">
+                    <img src="{% static 'img/search.png' %}" alt="search" class="searchicon" width="20" height="20">
+
+                </div>
+            </div>    
+            <div class="navitem">   
+                <span class="limitedoffer">
+                    LimitedOffer!
+                </span>
+            </div>
+        </div>
+
+        <div class="navbottom">
+            <h3 class="menuitem">Lamps</h3>
+            <h3 class="menuitem">Show Piece</h3>
+            <h3 class="menuitem">Decor</h3>
+            <h3 class="menuitem">Flower Pots</h3>
+
+
+        </div>
+    </nav>
+
+    <div class="slider">
+        <div class="sliderwrapper">
+            <div class="slideritem">
+                <img src="{% static 'img/lamp.jpg' %}" alt="" class="sliderimg" width="400vw" height="400vw">
+                <div class="slidebg">
+                    
+                </div>
+                <h1 class="slidertitle">Night Lamp</h1>
+                <h2 class="sliderprice">Rs.1500</h2>
+                <a href="#product">
+                <button class="buybutton">BUY NOW</button>
+            </a>
+            </div>
+
+            <div class="slideritem">
+                <img src="{% static 'img/showpiece.jpg' %}" alt="" class="sliderimg" width="400">
+                <div class="slidebg"></div>
+                <h1 class="slidertitle">Show Piece</h1>
+                <h2 class="sliderprice">Rs.1600</h2>
+                <a href="#product">
+                <button class="buybutton">BUY NOW</button>
+            </a>
+            </div>
+
+            <div class="slideritem">
+                <img src="{% static 'img/decor.jpg' %}" alt="" class="sliderimg">
+                <div class="slidebg"></div>
+                <h1 class="slidertitle">Wall Decor</h1>
+                <h2 class="sliderprice">Rs.1700</h2>
+                <a href="#product">
+                <button class="buybutton">BUY NOW</button>
+            </a>
+            </div>
+
+            <div class="slideritem">
+                <img src="{% static 'img/flower pot.jpg' %}" alt="" class="sliderimg">
+                <div class="slidebg"></div>
+                <h1 class="slidertitle">Flower Pot</h1>
+                <h2 class="sliderprice">Rs.1800</h2>
+                <a href="#product">
+                <button class="buybutton">BUY NOW</button>
+            </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="features">
+        <div class="feature">
+            <img src="{% static 'img/free shipping.png' %}" alt="" class="featureimg">
+            <span class="featuretitle">FREE SHIPPING</span>
+            <span class="featuredesc">Free worldwide shipping on all orders.</span>
+        </div>
+        <div class="feature">
+            <img src="{% static 'img/return.png' %}" alt="" class="featureimg">
+            <span class="featuretitle">30 DAYS RETURN</span>
+            <span class="featuredesc">No question return and easy refund in 14 days.</span>
+        </div>
+        <div class="feature">
+            <img src="{% static 'img/gift cards.png' %}" alt="" class="featureimg">
+            <span class="featuretitle">GIFT CARDS</span>
+            <span class="featuredesc">Buy gift cards and use coupon codes easily.</span>
+        </div>
+        <div class="feature">
+            <img src="{% static 'img/contact.png' %}" alt="" class="featureimg">
+            <span class="featuretitle">CONTACT US</span>
+            <span class="featuredesc">Keep in touch via email and support system.</span>
+        </div>
+    </div>
+
+    <div class="product" id="product">
+        <img src="{% static 'img/lamp.jpg' %}" alt="" class="productimg">
+        <div class="productdetails">
+            <h1 class="producttitle">Night Lamp</h1>
+            <h2 class="productprice">Rs.1500</h2>
+            <p class="productdesc">Embrace the tranquil beauty of nature and enhance 
+                your nighttime experience with our Wooden Night Lamp. Add a touch of rustic charm to your home today</p>
+
+                <div class="colors">
+                    <div class="color"></div>
+                    <div class="color"></div>
+        
+                </div>
+                <div class="sizes">
+                    <div class="size">20cm</div>
+                    <div class="size">25cm</div>
+                    <div class="size">30cm</div>
+        
+                </div>
+        
+                <button class="productbutton">BUY NOW!</button>
+        </div>
+        <div class="payment">
+            <h1 class="paytitle">Personal Information</h1>
+            <label>Name and Surename</label>
+            <input type="text" placeholder="john doe" class="payinput">
+            <label>Phone number</label>
+            <input type="text" placeholder="+1 235 469 879 " class="payinput">
+            <label>Address</label>
+            <input type="text" placeholder="Elton st 21 22-145" class="payinput">
+            <h1 class="paytitle">Card Information</h1>
+            <div class="cardicons">
+                <img src="{% static 'img/visa.png' %}" alt="" width="40" class="cardicon">
+                <img src="{% static 'img/master card.png' %}" alt="" width="40" class="cardicon">
+            </div>
+                <input type="password" class="payinput" placeholder="card number">
+                 <div class="cardinfo">
+                    <input type="text" placeholder="MM" class="payinput sm">
+                    <input type="text" placeholder="YYYY" class="payinput sm">
+                    <input type="text" placeholder="CVV" class="payinput sm">
+
+                 </div>
+                 <button class="paybutton">Checkout!</button>
+                 <span class="close">X</span>
+        </div>
+</div>
+
+<div class="gallery">
+    <div class="galleryitem">
+        <h1 class="gallertitle">Be Yourself!</h1>
+        <img src="" alt="" class="galleryimg">
+    </div>
+</div>
+ 
+   <img id="myimage" data-image-url = "{% static 'img/flower pot black.jpg'}" src = "">
+
+
+    <script src="{% static 'app.js' %}"></script>
+    
+
+</body>
+</html>
