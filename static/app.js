@@ -16,7 +16,7 @@ const products =[ {
     colors: [
         {
             code: "brown",
-            img: "{% static 'img/lamp.jpg%}",
+            img: "{% static 'img/lamp.jpg' %}",
         },
         {
 
@@ -64,7 +64,7 @@ const products =[ {
     colors: [
         {
             code: "brown",
-            img: "./img/flower pot.jpg",
+            img: "{% static 'img/flower pot.jpg' %}",
         },
         {
 
