@@ -12,6 +12,7 @@ def two(request):
     return HttpResponse("two hello!")
 
 def contact(request):
+    
     return render (request , 'contact.html')
 
 # Create your views here.

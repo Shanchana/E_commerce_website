@@ -16,12 +16,12 @@ const products =[ {
     colors: [
         {
             code: "brown",
-            img: "{% static 'img/lamp.jpg' %}",
+            img:  '/static/img/lamp.jpg',
         },
         {
 
             code: "black",
-            img: "{% static 'img/lamp black.jpg' %}",
+            img: '/static/img/lamp black.jpg',
         },
     ],
 },
@@ -32,12 +32,12 @@ const products =[ {
     colors: [
         {
             code: "brown",
-            img: "{% static 'img/showpiece.jpg' %}",
+            img: 'static/img/showpiece.jpg',
         },
         {
 
             code: "gray",
-            img: "{% static 'img/showpiece black.jpg' %}",
+            img: 'static/img/showpiece black.jpg' ,
         },
     ],
 },
@@ -48,12 +48,12 @@ const products =[ {
     colors: [
         {
             code: "brown",
-            img: "{% static 'img/decor.jpg' %}",
+            img: 'static/img/decor.jpg' ,
         },
         {
 
             code: "black",
-            img: "{% static 'img/decor black.jpg' %}",
+            img: 'static/img/decor black.jpg' ,
         },
     ],
 },
@@ -64,12 +64,12 @@ const products =[ {
     colors: [
         {
             code: "brown",
-            img: "{% static 'img/flower pot.jpg' %}",
+            img:'static/img/flower pot.jpg' ,
         },
         {
 
             code: "gray",
-            img: "{% static 'img/flower pot black.jpg' %}",
+            img: 'static/img/flower pot black.jpg' ,
         },
     ],
 },
